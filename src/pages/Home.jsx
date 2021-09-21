@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
+import { useAuth0 } from '@auth0/auth0-react'
 
-function Home() {
+function Home(props) {
+    const { isAuthenticated } = useAuth0();
+
     return (
         <div>
             <h1>Home Page</h1>
-            <Link to="/protectedPage">Secret Protected Page!</Link>
+            { isAuthenticated ? <Link to="/protectedPage">Secret Protected Page!</Link> : ""}
         </div>
     )
 }

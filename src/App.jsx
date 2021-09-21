@@ -4,6 +4,7 @@ import {
     Route
 } from 'react-router-dom'
 import './App.css';
+import ProtectedRoute from './auth/ProtectedRoute';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
@@ -17,8 +18,8 @@ function App() {
             <div className="App">
                 <Switch>
                     <Route exact path="/" component={Home} />
-                    <Route path="/profile" component={Profile} />
-                    <Route path="/protectedPage" component={ProtectedPage} />
+                    <ProtectedRoute path="/profile" component={Profile} />
+                    <ProtectedRoute path="/protectedPage" component={ProtectedPage} />
                     <Route path="*" component={NotFound}/>
                 </Switch>  
             </div>
