@@ -6,7 +6,8 @@ function Profile() {
 
     useEffect(() => {
         const serverUrl = process.env.REACT_APP_SERVER_URL    
-
+        // console.log(user.sub) // the unique user's ID from Auth0
+        
         fetch(`${serverUrl}/auth`, {
             method: 'POST',
             mode: 'cors',
