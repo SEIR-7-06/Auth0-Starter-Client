@@ -15,6 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * Application Type:
     * Single Page Application
+
     ![application type](./readme-images/application-type.png)
 
 * Application Login URI
@@ -22,10 +23,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 * Allowed Callback URLs
     * http://localhost:3000, and/or the URL of your hosted client app
+
     ![callback urls](./readme-images/callback.png)
 
 * Allowed logout URLs
     * http://localhost:3000, and/or the URL of your hosted client app
+    
     ![callback urls](./readme-images/logout.png)
 
 ## React Setup
@@ -66,6 +69,8 @@ https://auth0.com/docs/libraries/auth0-react#protect-a-route
 
 6. Implement conditional rendering for `Navbar.jsx`
 
+7. Implement conditional rendering for `Home.jsx`
+
 ## Auth0 API Setup
 1. Next we'll register an API on the dashboard, following the documentation at this URL: https://auth0.com/docs/architecture-scenarios/spa-api/part-2
 
@@ -73,4 +78,5 @@ https://auth0.com/docs/libraries/auth0-react#protect-a-route
 
 * Identifier
     * Set it to your development server URL, such as http://localhost:8000
+
     ![identifiers](./readme-images/identifier.png)
