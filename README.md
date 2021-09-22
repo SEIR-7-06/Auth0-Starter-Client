@@ -24,7 +24,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * Allowed Callback URLs
     * http://localhost:3000, and/or the URL of your hosted client app
 
-    ![callback urls](./readme-images/callback.png)
+    ![callback urls](./readme-images/profile.png)
 
 * Allowed logout URLs
     * http://localhost:3000, and/or the URL of your hosted client app
@@ -46,8 +46,8 @@ ReactDOM.render(
     <Auth0Provider
       domain="domain from the application page"
       clientId="clientid from the application page"
-      redirectUri={window.location.origin}
-      audience={process.env.REACT_APP_SERVER_URL} // localhost:8000
+      redirectUri={window.location.origin + '/profile'}
+      audience={process.env.REACT_APP_SERVER_URL}
     >
       <App />
     </Auth0Provider>
