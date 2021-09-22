@@ -10,4 +10,11 @@ nav {
 
 nav > div > span, a {
   padding-right: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+nav > div > span:hover, a:hover {
+  color: rebeccapurple;
+  cursor: pointer;
 }
